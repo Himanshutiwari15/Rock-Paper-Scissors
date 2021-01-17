@@ -1,8 +1,6 @@
 # Rock-Paper-Scissors
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b7435ec6-2db7-4b8e-90b4-564e91d3141a/deploy-status)](https://app.netlify.com/sites/rock-paper-scissors-mini-project/deploys)
 
-[![Himanshu Tiwari's DEV Community Profile](https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg)](https://dev.to/himanshutiwari15)
-
 <h3>Resources</h3>
 In the above project, I used some useful websites namely :
 <ul>
