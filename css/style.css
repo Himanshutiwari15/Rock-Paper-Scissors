@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Roboto&display=swap');
+
+:root{
+    --background-color: rgba(42, 42, 42, 0.89);
+    --primary-color: #56a5ff;
+    --dark-color: #ff8a2b;
+    --light-color: #f4f4f4;
+    --lose-color: #dc3545;
+    --win-color:#28a745;
+    --sol-duration: 1s;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: var(--background-color);
+    color: rgb(0, 0, 0);
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.restart-btn{
+    display: inline-block;
+    display: none;
+    background: var(--light-color);
+    color: #333;
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin-bottom: 1rem;
+    font-family: 'Roboto';
+}
+
+.restart-btn:hover{
+    background: rgba(143, 138, 138, 0.89);
+    color: rgb(255, 255, 255);
+}
+
+.header{
+    text-align: center;
+    margin: 1rem 0;
+    background-color: var(--background-color);
+}
+
+.header h1{
+    margin-bottom: 1rem;
+    color: #fff;
+    font-family: 'Hachi Maru Pop', cursive;
+}
+
+.score{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    font-size: 1.2rem;
+    color: white;
+}
+
+.score p:first-child{
+    background:var(--primary-color);
+}
+
+.score p:last-child{
+    background:var(--dark-color);
+}
+
+h2{
+    color: white;
+}
+
+.choices{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.choice{
+    cursor: pointer;
+}
+
+.choice:hover{
+    color: var(--light-color);
+}
+
+.text-win{
+    color: var(--win-color);
+}
+
+.text-lose{
+    color: var(--lose-color);
+}
+
+@media(max-width:700px){
+    .choice{
+        font-size: 110px;
+    }
+}
+
+@media(max-width:500px){
+    .choice{
+        font-size: 80px;
+    }
+}

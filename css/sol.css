@@ -1,0 +1,45 @@
+:root{
+    --sol-duration: 1s;
+}
+
+.sol{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.sol-content{
+    background: rgb(255, 255, 255);
+    text-align: center;
+    margin: 10% auto;
+    width: 350px;
+    border-radius: 3px;
+    padding: 3rem;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2) , 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: solopen;
+    animation-duration: var(--sol-duration);
+}
+
+.sol-content h1{
+    margin-bottom: 1rem;
+}
+
+.sol-content p{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+@keyframes solopen{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
